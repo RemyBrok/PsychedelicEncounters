@@ -27,6 +27,7 @@ BLUE = (0,0,255,0)
 win = pygame.display.set_mode((screenWidth, screenHeight))
 pygame.display.set_caption(screenName)
 
+
 class MotherEnemy(object):
     def __init__(self, cx, cy, radius, velx, vely, width, height):
         self.cx = cx
@@ -113,6 +114,7 @@ class CirEnemy(MotherEnemy):
         if self.angle <= 0 and self.direction == (-1):
             self.angle = 360
 
+# Player class
 class player(object):
     def __init__(self, x, y):
         self.x = x
